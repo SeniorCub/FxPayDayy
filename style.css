@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-family: 'Clash Display', sans-serif;
 }
 :root{
      --primary: #346AFF;
@@ -14,14 +15,14 @@ body{
      width: 100vw;
      overflow-x: hidden;
 }
-
+a{
+     color: var(--white)!important;
+     text-decoration: none;
+}
 nav{
      .navbar-brand{
           width: 70px;
           height: 70px;
-     }
-     a{
-          color: var(--white)!important;
      }
      .btn{
           background-color: var(--primary);
@@ -29,27 +30,76 @@ nav{
      }
 }
 .container-fluid{
-     padding: 0 5vw;
+     padding: 2vw 5vw;
 }
-#hero{
+section{
      height: 100vh;
+     width: 100%;
+     background-color: transparent;
+    overflow-x: hidden;
+}
+#home{
+     height: 100vh;
+     width: 100%;
+    overflow-x: hidden;
+     /* border: 1px solid wheat; */
      img{
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          object-fit: contain;
+     }
+     .cardss{
+          width: 80%;
+          height: 90vh;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          gap: 10px;
+          .card-title{
+               font-size: 3rem;
+               line-height: 1;
+               font-weight: 700;
+               color: var(--white);
+               span{
+                    color: var(--primary);
+               }
+          }
+          .card-text{
+               font-size: 1rem;
+               /* width: 0%; */
+               color: #fbfbfbaa;
+          }
+          .btn{
+               padding: 1rem 1.5rem;
+               -webkit-backdrop-filter: blur(5px);
+               background-color: #fbfbfb09;
+               backdrop-filter: blur(5px);
+               letter-spacing: 1px;
+          }
+          .btn1{
+               background-color: var(--primary);
+               a{
+                    font-weight: 500;
+                    color: var(--secondary)!important;
+               }
+          }  
+     }
+     .navbar-toggler{
+          border: none;
+          color: var(--white)!important;
      }
      .box{
           background-color: #fbfbfb09;
           border-radius: 100px;
-          z-index: -2;
+          z-index: -3;
           -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-          width: 40vw;
-          height: 40vw;
+          width: 60vw;
+          height: 60vw;
           transform: rotate(20deg);
      }
      .box1{
-          top: -300%;
+          top: -70%;
           left: -20%;
      }
      .box2{
@@ -57,32 +107,137 @@ nav{
           width: 60vw;
           transform: rotate(-17deg);
           height: 60vw;
-          top: -370%;
+          top: 0%;
           right: -10%;
      }
-}
-.icons{
-     width: 50px;
-     height: 50px;
-     opacity: 0.6;
-     z-index: -2;
-     img{
+     .icons{
           width: 50px;
-          height: 50px;    
+          height: 50px;
+          opacity: 0.6;
+          z-index: -2;
+          img{
+               width: 50px;
+               height: 50px;    
+          }
+     }
+     .icon1{
+          top: 20%;
+          transform: rotate(320deg);
+          left: 40%;
+     }
+     .icon2{
+          top: 60%;
+          transform: rotate(20deg);
+          left: 90%;
+     }
+     .icon3{
+          top: 70%;
+          transform: rotate(150deg);
+          left: 20%;
      }
 }
-.icon1{
-     top: 20%;
-     transform: rotate(320deg);
-     left: 40%;
+#abou{
+     img{
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+     } 
+     h2{
+          font-size: 3rem;
+          line-height: 1;
+          font-weight: 700;
+          color: var(--white);
+          margin-bottom: 1rem;
+          span{
+               color: var(--primary);
+          }
+     }
+     p{
+          font-size: 1rem;
+          color: #fbfbfbaa;
+     }
+     .btn{
+          margin-top: 1.5rem;
+          width: max-content;
+          padding: 0.5rem 1rem;
+          -webkit-backdrop-filter: blur(5px);
+          background-color: #fbfbfb09;
+          backdrop-filter: blur(5px);
+          letter-spacing: 1px;
+          font-weight: 500;
+          background-color: var(--primary);
+          a{
+               font-weight: 500;
+               color: var(--secondary)!important;
+          }
+     } 
+     .box{
+          background-color: #fbfbfb09;
+          border-radius: 10px;
+          z-index: 4;
+          -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+          width: 15vw;
+          height: 7vw;
+          .span1{
+               color: var(--primary);
+               font-size: 1.5rem;
+               font-weight: 600;
+          }
+          .span2{
+               font-size: 1.2rem;
+               color: var(--white);
+          }
+     }
+     .box1{
+          top: 10%;
+     }
+     .box2{
+          right: 0%;
+          bottom: 0%;
+          .span1{
+               font-size: 2rem;
+          }
+     }
 }
-.icon2{
-     top: 60%;
-     transform: rotate(20deg);
-     left: 90%;
-}
-.icon3{
-     top: 70%;
-     transform: rotate(150deg);
-     left: 20%;
+
+@media (min-width: 300px) and (max-width: 750px) {
+     .heroImg{
+          display: none;
+     }
+     section{
+          height: auto;
+          padding: 2vw 5vw;
+     }
+     #home{
+          .navbar-collapse{
+               position: absolute;
+               top: 10vh;
+               background-color: #20202006;
+               z-index: 4;
+               -webkit-backdrop-filter: blur(5px);
+               backdrop-filter: blur(5px);
+               width: 90vw;
+               padding: 10px 30px;
+          }
+          .box{
+               border-radius: 50px;
+          }
+          .box1{
+               left: -5%;
+               top: 50%;
+          }
+          .icon3{
+               top: 80%;
+          }
+          .icon2{
+               left: 85%;
+          }
+          .icon1{
+               left: 40%;
+          }
+          .cardss{
+               width: 100%;
+          }
+     }
 }
