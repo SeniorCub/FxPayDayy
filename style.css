@@ -62,6 +62,7 @@ section{
 #home{
      width: 100%;
      overflow-x: hidden;
+     overflow-y: hidden;
      /* border: 1px solid wheat; */
      img{
           width: 100%;
@@ -389,7 +390,7 @@ section{
           margin: 0 20px;
      }
      .roadmap-item {
-          background-color: #1b3a39;
+          background-color: #346aff2c;
           padding: 20px;
           border-radius: 8px;
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -660,6 +661,9 @@ footer{
           h1{
                color: #ffffffd3;
                font-size: 3rem;
+               span{
+                    color: var(--primary);
+               }
           }
           h6{
                color: #fbfbfbaa;
@@ -697,8 +701,14 @@ footer{
                     object-fit: cover;
                }
           }
-          .name{
-               
+          .card-footer{
+               border-top: 1px solid #fbfbfb;
+          }
+          .card-body{
+               font-size: 1.2rem;
+          }
+          .post{
+               color: #fbfbfbaa;   
           }
           .icon{
                i{
@@ -720,6 +730,81 @@ footer{
       
       ::-webkit-scrollbar-thumb:hover {
           background-color: var(--white); /* Color when hovering over the scrollbar thumb */
+      }
+}
+#about{
+     padding: 7vw 5vw;
+     .comm{
+          z-index: -2;
+          opacity: 0.1;
+          width: 70vw;
+          top: -10%;
+     }
+     .box{
+          border: 1px solid #fbfbfb09;
+          border-radius: 100px;
+          z-index: -3;
+          width: 30vw;
+          height: 30vw;
+          transform: rotate(20deg);
+          bottom: -30%;
+          right: -5%;
+          .bos{
+               border-radius: 100px;
+               -webkit-backdrop-filter: blur(5px);
+               backdrop-filter: blur(5px);
+               background-color: #fbfbfb09;
+               width: 29vw;
+               height: 29vw;
+          }
+     } 
+      .about-header {
+          text-align: center;
+          margin-bottom: 40px;
+      }
+      
+      .about-header h2 {
+          font-size: 2.5em;
+          color: #ffffff;
+      }
+      
+      .about-header .highlight {
+          color: var(--primary);
+      }
+      
+      .about-header p {
+          font-size: 1.2em;
+          color: #a5a5a5;
+          line-height: 1.6;
+      }
+      
+      .about-content {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+      }
+      
+      .about-item {
+          padding: 20px;
+          background-color: #346aff2c;
+          border-radius: 10px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      .about-item h2 {
+          font-size: 2em;
+          color: #ffffff;
+          margin-bottom: 15px;
+      }
+      
+      .about-item .highlight {
+          color: var(--primary);
+      }
+      
+      .about-item p {
+          color: #d1d1d1;
+          font-size: 1.1em;
+          line-height: 1.7;
       }
 }
 @media (min-width: 300px) and (max-width: 750px) {
