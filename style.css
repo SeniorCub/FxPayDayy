@@ -864,6 +864,11 @@ footer{
           }
           .cardss{
                width: 100%;
+               height: 70vh;
+               z-index: 2;
+               .btn{
+                    backdrop-filter: none;
+               }
           }
      }
       footer {
@@ -1012,6 +1017,12 @@ footer{
                p{
                     text-align: center;
                }
+          }
+     }
+     #abou {
+          padding-top: 0;
+          .col-12:first-child{
+               margin-top: 0;
           }
      }
 }
