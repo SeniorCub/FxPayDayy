@@ -679,7 +679,7 @@ footer{
           gap: 30px;
           .card{
                width: 50vw;
-               height: 50vh;
+               max-height: 50vh;
                border-radius: 25px;
                display: grid;
                grid-template-rows: 1fr 0.3fr;
@@ -812,8 +812,17 @@ footer{
           display: none;
      }
      section{
-          height: auto;
-          padding: 2vw 5vw;
+          min-height: max-content;
+          max-height: max-content;
+          height: max-content;
+          overflow-x: hidden;
+          
+          .col-12{
+               margin: 2rem 0;
+          }
+          .header{
+               width: 80vw;
+          }
      }
      #home{
           .navbar-collapse{
@@ -911,19 +920,15 @@ footer{
           }
       }
      }
-     section{
-          min-height: max-content;
-          height: max-content;
-          overflow-x: hidden;
-          .col-12{
-               margin: 2rem 0;
-          }
-          .header{
-               width: 80vw;
-          }
-     }
+    
      .container-fluid{
           padding: 7vw 5vw;
+          padding-bottom: 0;
+     }
+     #faqs {
+          .box {
+               bottom: 5%;
+          }
      }
      #abou{
           .box{
