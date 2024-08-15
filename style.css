@@ -27,10 +27,20 @@ nav{
           width: 70px;
           height: 70px;
      }
-     .btn{
-          background-color: var(--primary);
-          color: #000;
+     .btn, .btn:hover{
+          padding: 0.5rem 1rem;
+          -webkit-backdrop-filter: blur(5px);
+          background-color: #fbfbfb09;
+          backdrop-filter: blur(5px);
+          letter-spacing: 1px;
      }
+     .btn1, .btn1:hover{
+          background-color: var(--primary);
+          a{
+               font-weight: 500;
+               color: var(--secondary)!important;
+          }
+     }  
 }
 .container-fluid{
      padding: 2vw 5vw;
