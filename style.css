@@ -655,7 +655,7 @@ footer{
      color: #fbfbfbc9;
      line-height: 1.6;
  }
- #reviews{
+#reviews{
      padding: 2vw 0;
      .heading{
           h1{
@@ -807,7 +807,7 @@ footer{
           line-height: 1.7;
       }
 }
-@media (min-width: 300px) and (max-width: 750px) {
+@media (min-width: 300px) and (max-width: 850px) {
      .heroImg{
           display: none;
      }
@@ -899,17 +899,95 @@ footer{
              grid-template-columns: repeat(4, 1fr);
          }
      }
-     #suscribe {
-          .subscribe-forms {
-              h2 {
-               font-size: 2rem;
-              }
-          }
-     }
      .subscribe-form {
           height: max-content!important;
      }
      #social {
          width: 100vw;
+         .subscribe-forms {
+          h2 {
+           font-size: 1.2rem;
+           width: 100%;
+          }
+      }
+     }
+     section{
+          min-height: max-content;
+          height: max-content;
+          overflow-x: hidden;
+          .col-12{
+               margin: 2rem 0;
+          }
+          .header{
+               width: 80vw;
+          }
+     }
+     .container-fluid{
+          padding: 7vw 5vw;
+     }
+     #abou{
+          .box{
+               width: max-content;
+               height: max-content;
+          }
+     }
+     #how{
+          .coms{
+               top: 20%;
+          }
+     }
+     .d-gridd{
+          grid-template-columns: 1fr!important;
+     }
+     #reviews {
+          padding: 1rem;
+          .heading{
+               h1{
+                    font-size: 2.5rem!important;
+               }
+               h6{
+                    font-size: 1.5rem;
+               }
+          }
+          .cards {
+               .card {
+                    width: 80vw!important;
+                    .card-body {
+                         font-size: 0.9rem;
+                    }
+                    .img{
+                         width: 50px;
+                         height: 50px;
+                    }
+                    .icon{
+                         i{
+                              font-size: 2rem;
+                         }
+                    }
+               }
+          }
+     }
+     #services {
+          & .d-gridd {
+               .card{
+                    backdrop-filter: none;
+               }
+          }
+     }
+     #about {
+          .about-header {
+               p{
+                    text-align: justify;
+               }
+          }
+          .about-item {
+               h2{
+                    font-size: 1.5rem;
+                    text-align: center;
+               }
+               p{
+                    text-align: justify;
+               }
+          }
      }
 }
